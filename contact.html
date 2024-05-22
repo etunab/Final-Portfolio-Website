@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="contact-form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:100,400">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            font-family: 'Playfair Display', serif;
+            background-color: #2E8B57; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2E8B57;
+            font-size: 35px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Style for contact form */
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        button[type="submit"] {
+            background-color: #2E8B57;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        button[type="submit"]:hover {
+            background-color: #3CB371; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact me</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="post" action="contact-form-process.php">
+            <div class="form-group">
+                <label for="Name">Your name</label>
+                <input type="text" id="Name" name="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Your email address</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Message">Your message</label>
+                <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
